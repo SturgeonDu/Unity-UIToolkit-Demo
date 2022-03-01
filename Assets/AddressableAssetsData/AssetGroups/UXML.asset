@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bbb281ee3bf0b054c82ac2347e9e782c, type: 3}
+  m_Name: UXML
+  m_EditorClassIdentifier: 
+  m_GroupName: UXML
+  m_Data:
+    m_SerializedData: []
+  m_GUID: a50f1de8fc734b24e80e54325f437aa2
+  m_SerializeEntries:
+  - m_GUID: 0a28d6c9a26ea034b9cdbcdf36773ff3
+    m_Address: Assets/UXML/HeroCard.uxml
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: 87b397208556694428071caff2f06c6f
+    m_Address: Assets/UXML/HeroCardHorizontalLine.uxml
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  - m_GUID: df92ce4ca40cbae4b88f493c19342120
+    m_Address: Assets/UXML/HeroUI.uxml
+    m_ReadOnly: 0
+    m_SerializedLabels: []
+  m_ReadOnly: 0
+  m_Settings: {fileID: 11400000, guid: 5fa75e61e12adef4ebad20fea91350be, type: 2}
+  m_SchemaSet:
+    m_Schemas:
+    - {fileID: 11400000, guid: 28b0b70048ae1694397d0bc6a5324888, type: 2}
+    - {fileID: 11400000, guid: 1ea5ba37aba2cef40ab3c06788c1e818, type: 2}
