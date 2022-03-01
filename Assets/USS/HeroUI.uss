@@ -28,3 +28,20 @@
 
 .unity-button {
 }
+
+.btn-filter-style:active {
+    background-image: url('project://database/Assets/Texture/GUI%20Pro%20Kit%20Fantasy%20RPG/Sprites/00_Common/common_btn_yellow.png?fileID=-4189922956459317181&guid=ae9f8677ca3c24a7c80d7217a941f886&type=3#common_btn_yellow_0');
+    height: 80px;
+    width: 180px;
+    -unity-background-image-tint-color: rgba(255, 255, 255, 255);
+    scale: 1.05 1.05;
+}
+
+.button-return-style:active {
+    background-color: rgba(188, 188, 188, 0);
+    background-image: url('project://database/Assets/Texture/GUI%20Pro%20Kit%20Fantasy%20RPG/Sprites/00_Common/common_btn_yellow.png?fileID=-4189922956459317181&guid=ae9f8677ca3c24a7c80d7217a941f886&type=3#common_btn_yellow_0');
+    width: 80px;
+    height: 80px;
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    scale: 1.05 1.05;
+}

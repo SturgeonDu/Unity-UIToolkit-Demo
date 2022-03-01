@@ -16,5 +16,4 @@
         </ui:VisualElement>
         <ui:ScrollView name="HeroScrollView" horizontal-scroller-visibility="Hidden" vertical-scroller-visibility="Auto" style="align-items: center; width: 100%; height: 90%;" />
     </ui:VisualElement>
-    <ui:Button text="Button" display-tooltip-when-elided="true" class="unity-button" style="width: 200px; height: 80px; background-color: rgb(195, 195, 195); color: rgb(0, 0, 0); -unity-font-style: bold; font-size: 30px; -unity-text-align: middle-center;" />
 </ui:UXML>
