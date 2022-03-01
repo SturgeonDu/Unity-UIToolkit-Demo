@@ -25,6 +25,19 @@ public class HeroCard : VisualElement
     
     public void Init(int idx,int rank,string name)
     {
+        this.RegisterCallback<MouseDownEvent>((evt) =>
+        {
+            this.transform.scale = new Vector3(1.05f, 1.05f, 1.05f);
+        });
+        this.RegisterCallback<MouseUpEvent>((evt) =>
+        {
+            this.transform.scale = Vector3.one;
+        });
+        this.RegisterCallback<ClickEvent>((evt) =>
+        {
+            Debug.Log("Card " + idx + " clicked.");
+        });
+        
         m_Root = this.Q<VisualElement>("Root");
         m_Root.style.backgroundImage = _loadSprite(m_BackgroundList[(int)Random.Range(0f,m_BackgroundList.Count)]);
         
