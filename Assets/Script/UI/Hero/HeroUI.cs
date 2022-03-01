@@ -1,4 +1,6 @@
+using System;
 using UnityEngine;
+using UnityEngine.AddressableAssets;
 using UnityEngine.UIElements;
 
 public class HeroUI : MonoBehaviour
@@ -10,22 +12,25 @@ public class HeroUI : MonoBehaviour
     
     private VisualElement m_Root;
     private ScrollView m_ScrollView;
-    
-    
+
+
+    private Button m_Button_Filter = null;
+    private Button m_Button_Pokedex = null;
+    private Button m_Button_Return = null;
     // Start is called before the first frame update
     void Start()
     {
         var doc = GetComponent<UIDocument>();
         m_Root = doc.rootVisualElement;
 
-        var btn_Filter = m_Root.Q<Button>("Button-Filter");
-        btn_Filter.clicked += onBtn_Filter;
+        m_Button_Filter = m_Root.Q<Button>("Button-Filter");
+        m_Button_Filter.clicked += onBtn_Filter;
 
-        var btn_Pokedex = m_Root.Q<Button>("Button-Pokedex");
-        btn_Pokedex.clicked += onBtn_Pokedex;
+        m_Button_Pokedex = m_Root.Q<Button>("Button-Pokedex");
+        m_Button_Pokedex.clicked += onBtn_Pokedex;
         
-        var btn_Return = m_Root.Q<Button>("Button-Return");
-        btn_Return.clicked += onBtn_Return;
+        m_Button_Return = m_Root.Q<Button>("Button-Return");
+        m_Button_Return.clicked += onBtn_Return;
 
         m_ScrollView = m_Root.Q<ScrollView>("HeroScrollView");
         _initHeroCard(53,5);
@@ -61,6 +66,13 @@ public class HeroUI : MonoBehaviour
     
     void onBtn_Return()
     {
-        Debug.Log("onBtn_Return");
+        AddressableUtility.UnInstantiate(this.gameObject);
+    }
+
+    void OnDestroy()
+    {
+        m_Button_Filter.clicked -= onBtn_Filter;
+        m_Button_Pokedex.clicked -= onBtn_Pokedex;
+        m_Button_Return.clicked -= onBtn_Return;
     }
 }

@@ -45,7 +45,7 @@
      <Compile Include="Assets\Script\Utility\AddressableUtility.cs" />
      <Compile Include="Assets\Script\UI\Hero\HeroDetailUI.cs" />
      <Compile Include="Assets\Script\UI\Hero\HeroCard.cs" />
-     <Compile Include="Assets\Script\Main.cs" />
+     <Compile Include="Assets\Script\MainUI.cs" />
      <Compile Include="Assets\Script\UI\Hero\HeroCardHorizontalLine.cs" />
      <None Include="Assets\USS\HeroUI.uss" />
      <None Include="Assets\UXML\HeroCardHorizontalLine.uxml" />

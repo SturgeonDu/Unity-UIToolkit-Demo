@@ -16,5 +16,9 @@ public class AddressableUtility
                 callback.Invoke(instance);
         };
     }
-    
+
+    public static bool UnInstantiate(GameObject instance)
+    {
+        return Addressables.ReleaseInstance(instance);
+    }
 }
