@@ -2,6 +2,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using UnityEditor;
+using UnityEditor.UIElements;
 using UnityEngine;
 using UnityEngine.UIElements;
 
@@ -36,6 +37,11 @@ public class HeroCard : VisualElement
         this.RegisterCallback<ClickEvent>((evt) =>
         {
             Debug.Log("Card " + idx + " clicked.");
+            AddressableUtility.InstantiateAsync("HeroDetailUI",Vector3.zero, Quaternion.identity, null, (ins) =>
+            {
+                HeroDetailUI detail = ins.GetComponent<HeroDetailUI>();
+                detail.Init(idx);
+            });
         });
         
         m_Root = this.Q<VisualElement>("Root");

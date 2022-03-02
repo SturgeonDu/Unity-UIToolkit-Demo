@@ -1,0 +1,149 @@
+<ui:UXML xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" xsi="http://www.w3.org/2001/XMLSchema-instance" engine="UnityEngine.UIElements" editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
+    <Style src="project://database/Assets/USS/HeroUI.uss?fileID=7433441132597879392&amp;guid=e5aae637535b56b4c8b60d783ec337a5&amp;type=3#HeroUI" />
+    <ui:VisualElement name="Root" style="background-image: url(&apos;project://database/Assets/Sprites/bg1.png?fileID=2800000&amp;guid=fce35b779d7ed564da40158a7a801d01&amp;type=3#bg1&apos;); -unity-background-scale-mode: scale-and-crop; flex-grow: 1; flex-direction: row-reverse; align-items: center;">
+        <ui:VisualElement name="RightButtonList" style="width: 200px; margin-right: 20px; align-items: center; justify-content: center;">
+            <ui:Button display-tooltip-when-elided="true" name="Button-Info" class="btn-info-style" style="align-items: center; justify-content: space-around; top: auto;">
+                <ui:Label text="信息" display-tooltip-when-elided="true" name="Label" style="font-size: 28px; color: rgb(255, 255, 255); -unity-font-style: normal; width: auto; height: auto; top: auto; position: relative; left: auto; align-items: stretch; justify-content: flex-start; background-color: rgba(0, 0, 0, 0); bottom: 2px;" />
+            </ui:Button>
+            <ui:Button display-tooltip-when-elided="true" name="Button-Equipment" class="btn-info-style" style="align-items: center; justify-content: space-around; top: auto;">
+                <ui:Label text="装备" display-tooltip-when-elided="true" name="Label" style="font-size: 28px; color: rgb(255, 255, 255); -unity-font-style: normal; width: auto; height: auto; top: auto; position: relative; left: auto; align-items: stretch; justify-content: flex-start; background-color: rgba(0, 0, 0, 0); bottom: 2px;" />
+            </ui:Button>
+            <ui:Button display-tooltip-when-elided="true" name="Button-Point" class="btn-info-style" style="align-items: center; justify-content: space-around; top: auto;">
+                <ui:Label text="加点" display-tooltip-when-elided="true" name="Label" style="font-size: 28px; color: rgb(255, 255, 255); -unity-font-style: normal; width: auto; height: auto; top: auto; position: relative; left: auto; align-items: stretch; justify-content: flex-start; background-color: rgba(0, 0, 0, 0); bottom: 2px;" />
+            </ui:Button>
+            <ui:Button display-tooltip-when-elided="true" name="Button-Fetters" class="btn-info-style" style="align-items: center; justify-content: space-around; top: auto;">
+                <ui:Label text="羁绊" display-tooltip-when-elided="true" name="Label" style="font-size: 28px; color: rgb(255, 255, 255); -unity-font-style: normal; width: auto; height: auto; top: auto; position: relative; left: auto; align-items: stretch; justify-content: flex-start; background-color: rgba(0, 0, 0, 0); bottom: 2px;" />
+            </ui:Button>
+            <ui:Button display-tooltip-when-elided="true" name="Button-Story" class="btn-info-style" style="align-items: center; justify-content: space-around; top: auto;">
+                <ui:Label text="列传" display-tooltip-when-elided="true" name="Label" style="font-size: 28px; color: rgb(255, 255, 255); -unity-font-style: normal; width: auto; height: auto; top: auto; position: relative; left: auto; align-items: stretch; justify-content: flex-start; background-color: rgba(0, 0, 0, 0); bottom: 2px;" />
+            </ui:Button>
+        </ui:VisualElement>
+        <ui:VisualElement name="DetailNode" style="width: 30%; height: 90%; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/Sprites/universal_panel_corner_30px.png?fileID=21300000&amp;guid=6879dcf7d7fb8d64cae5912d0d521bba&amp;type=3#universal_panel_corner_30px&apos;); -unity-background-image-tint-color: rgba(0, 0, 0, 0.71); top: auto; align-items: center;">
+            <ui:VisualElement name="LevelBg" style="background-image: url(&apos;project://database/Assets/Sprites/circle.png?fileID=21300000&amp;guid=c703f8b89bc79304081de7bae3ed32d0&amp;type=3#circle&apos;); width: 60px; height: 60px; left: auto; top: 50px; right: 200px;">
+                <ui:Label text="45" display-tooltip-when-elided="true" name="Level" style="width: 80%; height: 80%; -unity-font-style: bold; font-size: 26px; -unity-text-align: middle-center; color: rgb(255, 255, 255); position: absolute; top: 7px; left: 5px; text-shadow: 1px -1px 0 rgba(0, 0, 0, 0.78);" />
+            </ui:VisualElement>
+            <ui:VisualElement name="Line" style="background-image: none; width: 75%; height: 1px; left: 43px; top: 20px; background-color: rgb(255, 255, 255);" />
+            <ui:Label text="&lt;color=yellow&gt;体力&lt;/color&gt;  150/150" display-tooltip-when-elided="true" name="Power" style="font-size: 26px; -unity-text-align: middle-right; -unity-font-style: bold; color: rgb(255, 255, 255); text-shadow: 1px -1px 0 rgba(0, 0, 0, 0.78); width: 50%; position: absolute; top: 45px; left: 252px; height: 35px;" />
+            <ui:Label text="/50" display-tooltip-when-elided="true" name="MaxLevel" style="font-size: 24px; -unity-text-align: middle-center; -unity-font-style: normal; color: rgb(255, 255, 255); text-shadow: 1px -1px 0 rgba(0, 0, 0, 0.78); width: 50px; position: absolute; top: 69px; left: 107px; height: 50px;" />
+            <ui:Label text="&lt;color=green&gt;经验&lt;/color&gt;  1500/20000" display-tooltip-when-elided="true" name="Exp" style="font-size: 26px; -unity-text-align: middle-right; -unity-font-style: bold; color: rgb(255, 255, 255); text-shadow: 1px -1px 0 rgba(0, 0, 0, 0.78); width: 345px; position: absolute; top: 81px; left: 190px; height: 35px;" />
+            <ui:VisualElement name="TypeList" style="background-image: none; width: 90%; height: 50px; background-color: rgba(0, 0, 0, 0.59); border-top-left-radius: 10px; border-bottom-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; align-items: center; justify-content: center; position: absolute; top: 130px; left: auto; flex-direction: row;">
+                <ui:VisualElement name="TypeGroup" style="height: 100%; width: auto; flex-direction: row; align-items: center; justify-content: flex-start; margin-right: 20px;">
+                    <ui:VisualElement name="Icon" style="background-image: url(&apos;project://database/Assets/Sprites/common_item_battle.png?fileID=21300000&amp;guid=d486dc43b69d91948949ad795870568b&amp;type=3#common_item_battle&apos;); width: 40px; height: 40px; margin-right: 10px;" />
+                    <ui:Label text="S" display-tooltip-when-elided="true" name="Value_1" style="font-size: 30px; -unity-font-style: bold; color: rgb(255, 149, 0); -unity-background-image-tint-color: rgb(255, 255, 255);" />
+                </ui:VisualElement>
+                <ui:VisualElement name="TypeGroup" style="height: 100%; width: auto; flex-direction: row; align-items: center; justify-content: flex-start; margin-right: 20px;">
+                    <ui:VisualElement name="Icon" style="background-image: url(&apos;project://database/Assets/Sprites/common_item_book_open.png?fileID=21300000&amp;guid=b798795262908ea48ae6d5bc2e05347b&amp;type=3#common_item_book_open&apos;); width: 40px; height: 40px; margin-right: 10px;" />
+                    <ui:Label text="A" display-tooltip-when-elided="true" name="Value_1" style="font-size: 30px; -unity-font-style: bold; color: rgb(229, 49, 164);" />
+                </ui:VisualElement>
+                <ui:VisualElement name="TypeGroup" style="height: 100%; width: auto; flex-direction: row; align-items: center; justify-content: flex-start; margin-right: 20px;">
+                    <ui:VisualElement name="Icon" style="background-image: url(&apos;project://database/Assets/Sprites/common_item_hourglass.png?fileID=21300000&amp;guid=c34b3de656fa7b64bb8264bec9da2f6d&amp;type=3#common_item_hourglass&apos;); width: 40px; height: 40px; margin-right: 10px;" />
+                    <ui:Label text="B" display-tooltip-when-elided="true" name="Value_1" style="font-size: 30px; -unity-font-style: bold; color: rgb(99, 97, 212);" />
+                </ui:VisualElement>
+                <ui:VisualElement name="TypeGroup" style="height: 100%; width: auto; flex-direction: row; align-items: center; justify-content: flex-start; margin-right: 20px;">
+                    <ui:VisualElement name="Icon" style="background-image: url(&apos;project://database/Assets/Sprites/common_item_energy.png?fileID=21300000&amp;guid=f03ca38ce7f4b6044a1d9ceed5a91562&amp;type=3#common_item_energy&apos;); width: 40px; height: 40px; margin-right: 10px;" />
+                    <ui:Label text="S" display-tooltip-when-elided="true" name="Value_1" style="font-size: 30px; -unity-font-style: bold; color: rgb(255, 149, 0);" />
+                </ui:VisualElement>
+                <ui:VisualElement name="TypeGroup" style="height: 100%; width: auto; flex-direction: row; align-items: center; justify-content: flex-start; margin-right: 20px;">
+                    <ui:VisualElement name="Icon" style="background-image: url(&apos;project://database/Assets/Sprites/common_item_helmet.png?fileID=21300000&amp;guid=2338eeda1aef6cd4786aa66f95a598ad&amp;type=3#common_item_helmet&apos;); width: 40px; height: 40px; margin-right: 10px;" />
+                    <ui:Label text="A" display-tooltip-when-elided="true" name="Value_1" style="font-size: 30px; -unity-font-style: bold; color: rgb(229, 49, 164);" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="AttributeList" style="flex-direction: column; align-items: center; justify-content: center; width: 90%; height: 350px; top: 130px; background-color: rgba(0, 0, 0, 0.59); border-top-left-radius: 10px; border-bottom-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px;">
+                <ui:VisualElement name="AttributeList" style="width: 100%; height: 50px; flex-direction: row; justify-content: space-between; margin-bottom: 15px;">
+                    <ui:VisualElement name="Left" style="height: 100%; width: 40%; margin-left: 10px; flex-direction: row; align-items: center; justify-content: flex-start;">
+                        <ui:VisualElement name="AttributeType" style="background-image: url(&apos;project://database/Assets/Sprites/common_item_battle.png?fileID=21300000&amp;guid=d486dc43b69d91948949ad795870568b&amp;type=3#common_item_battle&apos;); width: 50px; height: 50px;" />
+                        <ui:Label text="物理攻击" display-tooltip-when-elided="true" name="AttributeName" style="color: rgb(255, 255, 255); font-size: 26px; -unity-font-style: normal; -unity-text-align: middle-center; margin-left: 10px;" />
+                    </ui:VisualElement>
+                    <ui:Label text="999&lt;color=green&gt;(+15.5)&lt;/color&gt;" display-tooltip-when-elided="true" name="AttributeValue" style="-unity-text-align: middle-center; font-size: 26px; color: rgb(255, 255, 255); margin-right: 10px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="AttributeList" style="width: 100%; height: 50px; flex-direction: row; justify-content: space-between; margin-bottom: 15px;">
+                    <ui:VisualElement name="Left" style="height: 100%; width: 40%; margin-left: 10px; flex-direction: row; align-items: center; justify-content: flex-start;">
+                        <ui:VisualElement name="AttributeType" style="background-image: url(&apos;project://database/Assets/Sprites/common_item_helmet.png?fileID=21300000&amp;guid=2338eeda1aef6cd4786aa66f95a598ad&amp;type=3#common_item_helmet&apos;); width: 50px; height: 50px;" />
+                        <ui:Label text="物理防御" display-tooltip-when-elided="true" name="AttributeName" style="color: rgb(255, 255, 255); font-size: 26px; -unity-font-style: normal; -unity-text-align: middle-center; margin-left: 10px;" />
+                    </ui:VisualElement>
+                    <ui:Label text="999&lt;color=green&gt;(+15.5)&lt;/color&gt;" display-tooltip-when-elided="true" name="AttributeValue" style="-unity-text-align: middle-center; font-size: 26px; color: rgb(255, 255, 255); margin-right: 10px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="AttributeList" style="width: 100%; height: 50px; flex-direction: row; justify-content: space-between; margin-bottom: 15px;">
+                    <ui:VisualElement name="Left" style="height: 100%; width: 40%; margin-left: 10px; flex-direction: row; align-items: center; justify-content: flex-start;">
+                        <ui:VisualElement name="AttributeType" style="background-image: url(&apos;project://database/Assets/Sprites/common_item_pickax.png?fileID=21300000&amp;guid=653e09b575e7c9d428a1d25ae65464d2&amp;type=3#common_item_pickax&apos;); width: 50px; height: 50px;" />
+                        <ui:Label text="法术攻击" display-tooltip-when-elided="true" name="AttributeName" style="color: rgb(255, 255, 255); font-size: 26px; -unity-font-style: normal; -unity-text-align: middle-center; margin-left: 10px;" />
+                    </ui:VisualElement>
+                    <ui:Label text="999&lt;color=green&gt;(+15.5)&lt;/color&gt;" display-tooltip-when-elided="true" name="AttributeValue" style="-unity-text-align: middle-center; font-size: 26px; color: rgb(255, 255, 255); margin-right: 10px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="AttributeList" style="width: 100%; height: 50px; flex-direction: row; justify-content: space-between; margin-bottom: 15px;">
+                    <ui:VisualElement name="Left" style="height: 100%; width: 40%; margin-left: 10px; flex-direction: row; align-items: center; justify-content: flex-start;">
+                        <ui:VisualElement name="AttributeType" style="background-image: url(&apos;project://database/Assets/Sprites/common_item_shield.png?fileID=21300000&amp;guid=fbf72201a375cd04cb202fb09b0f6419&amp;type=3#common_item_shield&apos;); width: 50px; height: 50px;" />
+                        <ui:Label text="法术防御" display-tooltip-when-elided="true" name="AttributeName" style="color: rgb(255, 255, 255); font-size: 26px; -unity-font-style: normal; -unity-text-align: middle-center; margin-left: 10px;" />
+                    </ui:VisualElement>
+                    <ui:Label text="999&lt;color=green&gt;(+15.5)&lt;/color&gt;" display-tooltip-when-elided="true" name="AttributeValue" style="-unity-text-align: middle-center; font-size: 26px; color: rgb(255, 255, 255); margin-right: 10px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="AttributeList" style="width: 100%; height: 50px; flex-direction: row; justify-content: space-between; margin-bottom: 15px;">
+                    <ui:VisualElement name="Left" style="height: 100%; width: 40%; margin-left: 10px; flex-direction: row; align-items: center; justify-content: flex-start;">
+                        <ui:VisualElement name="AttributeType" style="background-image: url(&apos;project://database/Assets/Sprites/common_item_shoes.png?fileID=21300000&amp;guid=1bb06b7aa9762a941a2ed6daa5c1e258&amp;type=3#common_item_shoes&apos;); width: 50px; height: 50px;" />
+                        <ui:Label text="速度" display-tooltip-when-elided="true" name="AttributeName" style="color: rgb(255, 255, 255); font-size: 26px; -unity-font-style: normal; -unity-text-align: middle-center; margin-left: 10px;" />
+                    </ui:VisualElement>
+                    <ui:Label text="999&lt;color=green&gt;(+15.5)&lt;/color&gt;" display-tooltip-when-elided="true" name="AttributeValue" style="-unity-text-align: middle-center; font-size: 26px; color: rgb(255, 255, 255); margin-right: 10px;" />
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="SkillList" style="width: 90%; height: 250px; top: 150px; background-color: rgba(0, 0, 0, 0.59); border-top-left-radius: 10px; border-bottom-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; align-items: center; justify-content: center;">
+                <ui:VisualElement name="Skill" style="width: 100%; height: 50px; flex-direction: row; justify-content: space-between; margin-bottom: 20px; margin-top: 20px;">
+                    <ui:VisualElement name="Left" style="height: 100%; width: 40%; margin-left: 10px; flex-direction: row; align-items: center; justify-content: flex-start;">
+                        <ui:VisualElement name="SkillIcon" style="background-image: url(&apos;project://database/Assets/Sprites/common_item_battle.png?fileID=21300000&amp;guid=d486dc43b69d91948949ad795870568b&amp;type=3#common_item_battle&apos;); width: 50px; height: 50px;" />
+                        <ui:Label text="燕人咆哮" display-tooltip-when-elided="true" name="SkillName" style="color: rgb(255, 255, 255); font-size: 26px; -unity-font-style: normal; -unity-text-align: middle-center; margin-left: 10px;" />
+                    </ui:VisualElement>
+                    <ui:Label text="Lv.10" display-tooltip-when-elided="true" name="AttributeValue" style="-unity-text-align: middle-center; font-size: 26px; color: rgb(255, 255, 255); margin-right: 10px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Skill" style="width: 100%; height: 50px; flex-direction: row; justify-content: space-between; margin-bottom: 20px;">
+                    <ui:VisualElement name="Left" style="height: 100%; width: 40%; margin-left: 10px; flex-direction: row; align-items: center; justify-content: flex-start;">
+                        <ui:VisualElement name="SkillIcon" style="background-image: url(&apos;project://database/Assets/Sprites/common_item_battle.png?fileID=21300000&amp;guid=d486dc43b69d91948949ad795870568b&amp;type=3#common_item_battle&apos;); width: 50px; height: 50px;" />
+                        <ui:Label text="轻勇飞燕" display-tooltip-when-elided="true" name="SkillName" style="color: rgb(255, 255, 255); font-size: 26px; -unity-font-style: normal; -unity-text-align: middle-center; margin-left: 10px;" />
+                    </ui:VisualElement>
+                    <ui:Label text="Lv.10" display-tooltip-when-elided="true" name="AttributeValue" style="-unity-text-align: middle-center; font-size: 26px; color: rgb(255, 255, 255); margin-right: 10px;" />
+                </ui:VisualElement>
+                <ui:VisualElement name="Skill" style="width: 100%; height: 50px; flex-direction: row; justify-content: space-between; margin-bottom: 20px;">
+                    <ui:VisualElement name="Left" style="height: 100%; width: 40%; margin-left: 10px; flex-direction: row; align-items: center; justify-content: flex-start; display: none;">
+                        <ui:VisualElement name="SkillIcon" style="background-image: url(&apos;project://database/Assets/Sprites/common_item_battle.png?fileID=21300000&amp;guid=d486dc43b69d91948949ad795870568b&amp;type=3#common_item_battle&apos;); width: 50px; height: 50px;" />
+                        <ui:Label text="轻勇飞燕" display-tooltip-when-elided="true" name="SkillName" style="color: rgb(255, 255, 255); font-size: 26px; -unity-font-style: normal; -unity-text-align: middle-center; margin-left: 10px;" />
+                    </ui:VisualElement>
+                    <ui:Label text="Lv.10" display-tooltip-when-elided="true" name="AttributeValue" style="-unity-text-align: middle-center; font-size: 26px; color: rgb(255, 255, 255); margin-right: 10px; display: none;" />
+                    <ui:VisualElement name="LockNode" style="width: 100%; height: 100%; flex-direction: row; flex-wrap: wrap;">
+                        <ui:VisualElement name="Icon" style="background-image: url(&apos;project://database/Assets/Sprites/stage_frame_icon_lock.png?fileID=21300000&amp;guid=8b654b018af826840b289259b45bf268&amp;type=3#stage_frame_icon_lock&apos;); width: 35px; height: 50px; position: relative; margin-left: 10px; margin-right: 10px;" />
+                        <ui:Label text="觉醒后解锁" display-tooltip-when-elided="true" name="LockContent" style="height: auto; width: auto; -unity-text-align: middle-center; color: rgb(255, 255, 255); font-size: 26px; display: flex; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0; padding-left: 0; padding-right: 0; padding-top: 0; padding-bottom: 0;" />
+                    </ui:VisualElement>
+                </ui:VisualElement>
+            </ui:VisualElement>
+            <ui:VisualElement name="ButtonList" style="width: 95%; height: 100px; top: 180px; flex-direction: row; justify-content: space-around; align-items: center;">
+                <ui:Button display-tooltip-when-elided="true" class="btn-info-style" style="background-image: url(&apos;project://database/Assets/Sprites/btn/common_btn_yellow.png?fileID=-4189922956459317181&amp;guid=7d728a6b46a11d14fbbe06f476d4c4ad&amp;type=3#common_btn_yellow_0&apos;);">
+                    <ui:Label text="进阶" display-tooltip-when-elided="true" style="font-size: 30px; -unity-text-align: middle-center; color: rgb(255, 255, 255); -unity-font-style: bold; text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.78); top: auto; bottom: 2px;" />
+                </ui:Button>
+                <ui:Button display-tooltip-when-elided="true" class="btn-info-style" style="background-image: url(&apos;project://database/Assets/Sprites/btn/common_btn_mint.png?fileID=2071342517933136681&amp;guid=3bf64bf990991b74da599b10f03d3836&amp;type=3#common_btn_mint_0&apos;);">
+                    <ui:Label text="传承" display-tooltip-when-elided="true" style="font-size: 30px; -unity-text-align: middle-center; color: rgb(255, 255, 255); -unity-font-style: bold; text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.78); top: auto; bottom: 2px;" />
+                </ui:Button>
+                <ui:Button display-tooltip-when-elided="true" class="btn-info-style" style="background-image: url(&apos;project://database/Assets/Sprites/btn/common_btn_green.png?fileID=2665930108083454080&amp;guid=b37e1410145a1e0478045fc87460545c&amp;type=3#common_btn_green_0&apos;);">
+                    <ui:Label text="重塑" display-tooltip-when-elided="true" style="font-size: 30px; -unity-text-align: middle-center; color: rgb(255, 255, 255); -unity-font-style: bold; text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.78); top: auto; bottom: 2px;" />
+                </ui:Button>
+            </ui:VisualElement>
+        </ui:VisualElement>
+        <ui:VisualElement name="CharacterNode" style="position: relative; height: 100%; width: 60%;">
+            <ui:VisualElement name="Evolution" style="position: absolute; width: 100px; height: 100px; top: 178px; left: 932px; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/Sprites/common_item_lucky.png?fileID=21300000&amp;guid=ed6646219f92046789dee5812e61ea33&amp;type=3#common_item_lucky&apos;);" />
+        </ui:VisualElement>
+        <ui:Label text="英雄名称六字" display-tooltip-when-elided="true" name="HeroName" style="position: absolute; -unity-font-style: bold; font-size: 30px; -unity-text-align: middle-center; color: rgb(226, 113, 0); text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.59); top: 72px; left: 794px; width: 314px;" />
+        <ui:VisualElement name="RankNode" style="position: absolute; width: 260px; height: 50px; left: auto; top: 120px; flex-direction: row; right: 45%; justify-content: space-around; align-items: center;">
+            <ui:VisualElement name="Star_0" style="background-image: url(&apos;project://database/Assets/Sprites/result_star.png?fileID=21300000&amp;guid=01e18e827aba2884d97d15f9b4e010d1&amp;type=3#result_star&apos;); width: 50px; height: 50px; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0;" />
+            <ui:VisualElement name="Star_1" style="background-image: url(&apos;project://database/Assets/Sprites/result_star.png?fileID=21300000&amp;guid=01e18e827aba2884d97d15f9b4e010d1&amp;type=3#result_star&apos;); width: 50px; height: 50px; margin-left: 5px; margin-right: 5px;" />
+            <ui:VisualElement name="Star_2" style="background-image: url(&apos;project://database/Assets/Sprites/result_star.png?fileID=21300000&amp;guid=01e18e827aba2884d97d15f9b4e010d1&amp;type=3#result_star&apos;); width: 50px; height: 50px; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0;" />
+            <ui:VisualElement name="Star_3" style="background-image: url(&apos;project://database/Assets/Sprites/result_star.png?fileID=21300000&amp;guid=01e18e827aba2884d97d15f9b4e010d1&amp;type=3#result_star&apos;); width: 50px; height: 50px; margin-left: 5px; margin-right: 5px;" />
+            <ui:VisualElement name="Star_4" style="background-image: url(&apos;project://database/Assets/Sprites/result_star_dim.png?fileID=21300000&amp;guid=407bd867eab9d2d42a97cd6531853df5&amp;type=3#result_star_dim&apos;); width: 50px; height: 50px; margin-left: 0; margin-right: 0; margin-top: 0; margin-bottom: 0;" />
+        </ui:VisualElement>
+        <ui:VisualElement name="Type" style="position: absolute; width: 74px; height: 70px; background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/Sprites/guild_flag_0.png?fileID=21300000&amp;guid=1185458cf932b41ee9dda538a92b9ac8&amp;type=3#guild_flag_0&apos;); -unity-background-image-tint-color: rgb(255, 255, 255); -unity-background-scale-mode: stretch-to-fill; top: 112px; left: auto; flex-direction: row-reverse; right: 788px;">
+            <ui:Label text="魏" display-tooltip-when-elided="true" name="TypeName" style="align-items: center; flex-grow: 1; -unity-text-align: middle-center; color: rgb(255, 255, 255); font-size: 30px; -unity-font-style: bold; position: absolute; top: -2px; left: 19px; text-shadow: 1px -1px 0 rgb(89, 89, 89);" />
+        </ui:VisualElement>
+    </ui:VisualElement>
+    <ui:Button display-tooltip-when-elided="true" name="Button-Return" class="btn-filter-style" style="background-color: rgba(0, 0, 0, 0); background-image: url(&apos;project://database/Assets/Sprites/repeat.png?fileID=21300000&amp;guid=7abdbfbb897690847a6cf571b9eb56e3&amp;type=3#repeat&apos;); width: 80px; height: 80px; -unity-background-image-tint-color: rgb(11, 255, 0); position: absolute; left: 0; top: 0;" />
+    <ui:Button display-tooltip-when-elided="true" name="Button-Raiders" class="btn-info-style" style="align-items: center; justify-content: space-around; top: 980px; position: absolute; background-image: url(&apos;project://database/Assets/Sprites/btn/common_btn_brown.png?fileID=1480961996498039030&amp;guid=a81c980dbab734f40a5d0dbaaf522e63&amp;type=3#common_btn_brown_0&apos;); left: 305px;">
+        <ui:Label text="攻略" display-tooltip-when-elided="true" name="Label" style="font-size: 28px; color: rgb(255, 255, 255); -unity-font-style: normal; width: auto; height: auto; top: auto; position: relative; left: auto; align-items: stretch; justify-content: flex-start; background-color: rgba(0, 0, 0, 0); bottom: 2px;" />
+    </ui:Button>
+    <ui:Button display-tooltip-when-elided="true" name="Button-Image" class="btn-info-style" style="align-items: center; justify-content: space-around; top: 980px; position: absolute; background-image: url(&apos;project://database/Assets/Sprites/btn/common_btn_purple.png?fileID=6559573953508838307&amp;guid=86a68e67b52fd3d4bba51d83e45df440&amp;type=3#common_btn_purple_0&apos;); left: 674px;">
+        <ui:Label text="形象" display-tooltip-when-elided="true" name="Label" style="font-size: 28px; color: rgb(255, 255, 255); -unity-font-style: normal; width: auto; height: auto; top: auto; position: relative; left: auto; align-items: stretch; justify-content: flex-start; background-color: rgba(0, 0, 0, 0); bottom: 2px; right: auto; -unity-text-align: middle-center; border-top-left-radius: 0; border-bottom-left-radius: 0; border-top-right-radius: 0; border-bottom-right-radius: 0;" />
+    </ui:Button>
+</ui:UXML>

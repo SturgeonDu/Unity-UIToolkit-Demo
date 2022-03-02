@@ -29,6 +29,10 @@ MonoBehaviour:
     m_Address: Assets/UXML/HeroUI.uxml
     m_ReadOnly: 0
     m_SerializedLabels: []
+  - m_GUID: 86677913e60d4474c8cbdb3fb845c02d
+    m_Address: Assets/UXML/HeroDetailUI.uxml
+    m_ReadOnly: 0
+    m_SerializedLabels: []
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 5fa75e61e12adef4ebad20fea91350be, type: 2}
   m_SchemaSet:

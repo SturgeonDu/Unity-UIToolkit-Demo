@@ -33,7 +33,7 @@
     background-image: url('project://database/Assets/Texture/GUI%20Pro%20Kit%20Fantasy%20RPG/Sprites/00_Common/common_btn_yellow.png?fileID=-4189922956459317181&guid=ae9f8677ca3c24a7c80d7217a941f886&type=3#common_btn_yellow_0');
     height: 80px;
     width: 180px;
-    -unity-background-image-tint-color: rgba(255, 255, 255, 255);
+    -unity-background-image-tint-color: rgb(255, 255, 255);
     scale: 1.05 1.05;
 }
 
@@ -44,4 +44,70 @@
     height: 80px;
     -unity-background-image-tint-color: rgb(255, 255, 255);
     scale: 1.05 1.05;
+}
+
+.btn-info-style {
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 150px;
+    height: 75px;
+    background-image: url('project://database/Assets/Sprites/btn/common_btn_blue.png?fileID=6616375705706489589&guid=84a4f1fc9bf67334f9a959d7f63d95a9&type=3#common_btn_blue_0');
+    background-color: rgba(0, 0, 0, 0);
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+}
+
+.btn-info-style:hover {
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 150px;
+    height: 75px;
+    background-image: url('project://database/Assets/Sprites/btn/common_btn_blue.png?fileID=6616375705706489589&guid=84a4f1fc9bf67334f9a959d7f63d95a9&type=3#common_btn_blue_0');
+    background-color: rgba(0, 0, 0, 0);
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    -unity-background-image-tint-color: rgba(200, 200, 200, 255);
+}
+
+.btn-info-style:active {
+    justify-content: flex-start;
+    align-items: stretch;
+    width: 150px;
+    height: 75px;
+    background-image: url('project://database/Assets/Sprites/btn/common_btn_blue.png?fileID=6616375705706489589&guid=84a4f1fc9bf67334f9a959d7f63d95a9&type=3#common_btn_blue_0');
+    background-color: rgba(0, 0, 0, 0);
+    -unity-font-style: bold;
+    -unity-text-align: middle-center;
+    -unity-background-image-tint-color: rgb(255, 255, 255);
+    scale: 1.05 1.05;
+}
+
+.button-info-style {
+    background-image: url('project://database/Assets/Sprites/btn/common_btn_green.png?fileID=2665930108083454080&guid=b37e1410145a1e0478045fc87460545c&type=3#common_btn_green_0');
+    align-items: center;
+    justify-content: space-around;
+    width: 150px;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.btn-info-style {
+}
+
+.btn-info-style {
+    background-image: url('project://database/Assets/Sprites/btn/common_btn_yellow.png?fileID=-4189922956459317181&guid=7d728a6b46a11d14fbbe06f476d4c4ad&type=3#common_btn_yellow_0');
+    align-items: center;
+    justify-content: space-around;
+    width: 150px;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.btn-info-style {
+    background-image: url('project://database/Assets/Sprites/btn/common_btn_purple.png?fileID=6559573953508838307&guid=86a68e67b52fd3d4bba51d83e45df440&type=3#common_btn_purple_0');
+    align-items: center;
+    justify-content: space-around;
+    width: 150px;
+    height: 70px;
+    background-color: rgba(0, 0, 0, 0);
 }

@@ -87,6 +87,7 @@ MonoBehaviour:
     m_LabelNames:
     - default
     - HeroUI
+    - HeroDetailUI
   m_SchemaTemplates: []
   m_GroupTemplateObjects:
   - {fileID: 11400000, guid: 8e1025ee98c31424fa7fc6999c607297, type: 2}

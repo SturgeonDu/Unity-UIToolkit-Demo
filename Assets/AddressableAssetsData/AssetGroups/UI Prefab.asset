@@ -22,6 +22,11 @@ MonoBehaviour:
     m_ReadOnly: 0
     m_SerializedLabels:
     - HeroUI
+  - m_GUID: 4abe3d7861e562b42a653889c5040223
+    m_Address: Assets/Prefab/HeroDetailUI.prefab
+    m_ReadOnly: 0
+    m_SerializedLabels:
+    - HeroDetailUI
   m_ReadOnly: 0
   m_Settings: {fileID: 11400000, guid: 5fa75e61e12adef4ebad20fea91350be, type: 2}
   m_SchemaSet:
