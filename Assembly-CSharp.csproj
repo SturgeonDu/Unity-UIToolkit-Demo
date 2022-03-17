@@ -54,6 +54,7 @@
      <None Include="Assets\UXML\HeroDetailUI.uxml" />
      <None Include="Assets\UXML\HeroCardHorizontalLine.uxml" />
      <None Include="Assets\UXML\HeroCard.uxml" />
+     <None Include="Assets\codeandweb.com\Readme.txt" />
      <None Include="Assets\UXML\HeroUI.uxml" />
      <Reference Include="UnityEngine">
      <HintPath>C:/Program Files/Unity/2021.2.4f1/Editor/Data/Managed/UnityEngine/UnityEngine.dll</HintPath>
